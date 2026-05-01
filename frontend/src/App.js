@@ -10,7 +10,7 @@ function App() {
   const [prediction, setPrediction] = useState(null)
   const [history, setHistory] = useState([])
   const [loading, setLoading] = useState(false)
-  const Base_api = 'http://localhost:3000'
+  const Base_api = 'https://carprediction-backend-express.onrender.com'
 
   async function fetchPrediction() {
     if (!year || !driven || !owners || !enginecc || !milage) {
