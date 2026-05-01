@@ -13,7 +13,7 @@ app.use(cors({
 
 function connectMongoose() {
     try {
-        mongoose.connect('mongodb://localhost:27017/carprediction')
+        mongoose.connect('mongodb+srv://chaudharsami324_db_user:HjtGZkrBRRxwcW9h@cluster0.hmsc2is.mongodb.net/carprediction?retryWrites=true&w=majority&appName=Cluster0')
         console.log('Connected to MongoDB successfully')
     } catch (err) {
         console.error(err)
